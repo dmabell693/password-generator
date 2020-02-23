@@ -1,0 +1,36 @@
+body {
+    color: #3b4954;
+    background-color: #f9fbfd;
+}
+
+textarea {
+    height: 10rem;
+}
+
+.h1 {
+    padding-top: 0.5rem;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 3rem 2.5rem;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container-head {
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #e7e9eb;
+}
+
+#contentRow {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e7e9eb;
+}
+
+#passwordLocation {
+    border: 2px dotted #afb1b3de!important;
+}
