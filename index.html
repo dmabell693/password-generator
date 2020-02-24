@@ -6,6 +6,7 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/javascript.js"></script>
 </head>
 <body>
     <header class="h1 text-center">
@@ -16,15 +17,17 @@
     <div class="container shadow mb-5 bg-white rounded">
         <p class="row h2 container-head">Generate a Password</p>
         <div class="row" id="contentRow">
-            <textarea class="col rounded-lg" name="password-text-box" id="passwordLocation">
+            <section class="col rounded-lg text-center" name="password-text-box" id="passwordLocation">
+                <br>
+                <p>Your Secure Password</p>
+                
 
 
-
-            </textarea>
+            </section>
         </div>
         <br>
         <div class="row justify-content-md-center">
-            <button type="button" class="btn btn-danger btn-lg rounded-pill">Generate Password</button>
+            <button type="button" class="btn btn-danger btn-lg rounded-pill" id="generate" onclick="generatePassword()">Generate Password</button>
         </div>
     </div>
     
