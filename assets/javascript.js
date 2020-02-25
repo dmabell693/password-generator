@@ -96,7 +96,6 @@ function generatePassword() {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getNumSpecUpperLowerArr();
         }
-        alert("Your password is: " + buildPassword);
     }
 
 // 3 character types
@@ -104,21 +103,18 @@ function generatePassword() {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandSpecUpperLower();
         }
-        alert("Your password is: " + buildPassword);
     }
 
     if (passCharTypesNum === true && passCharTypesUpper === true && passCharTypesLower === true && passCharTypesSpec === false) {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandNumUpperLower();
         }
-        alert("Your password is: " + buildPassword);
     }
 
     if (passCharTypesNum === true && passCharTypesSpec === true && passCharTypesUpper === true && passCharTypesLower === false) {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandNumSpecUpper();
         }
-        alert("Your password is: " + buildPassword);
     }
 
 // 2 character types
@@ -126,42 +122,36 @@ function generatePassword() {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandUpperLower();
         }
-        alert("Your password is: " + buildPassword);
     }
 
     if (passCharTypesSpec === true && passCharTypesLower === true && passCharTypesUpper === false && passCharTypesNum === false) {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandSpecLower();
         }
-        alert("Your password is: " + buildPassword);
     }
 
     if (passCharTypesSpec === true && passCharTypesUpper === true && passCharTypesLower === false && passCharTypesNum === false) {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandSpecUpper();
         }
-        alert("Your password is: " + buildPassword);
     }
 
     if (passCharTypesNum === true && passCharTypesLower === true && passCharTypesUpper === false && passCharTypesSpec === false) {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandNumLower();
         }
-        alert("Your password is: " + buildPassword);
     }
 
     if (passCharTypesNum === true && passCharTypesUpper === true && passCharTypesLower === false && passCharTypesSpec === false) {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandNumUpper();
         }
-        alert("Your password is: " + buildPassword);
     }
 
     if (passCharTypesNum === true && passCharTypesSpec === true && passCharTypesLower === false && passCharTypesUpper === false) {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandNumSpec();
         }
-        alert("Your password is: " + buildPassword);
     }
 
 // 1 character type
@@ -169,27 +159,26 @@ function generatePassword() {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandLowerChar();
         }
-        alert("Your password is: " + buildPassword);
     }
 
     if (passCharTypesUpper === true && passCharTypesNum === false && passCharTypesSpec === false && passCharTypesLower === false) {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandUpperChar();
         }
-        alert("Your password is: " + buildPassword);
     }
 
     if (passCharTypesSpec === true && passCharTypesNum === false && passCharTypesLower === false && passCharTypesUpper === false) {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandSpecChar();
         }
-        alert("Your password is: " + buildPassword);
     }
 
     if (passCharTypesNum === true && passCharTypesSpec === false && passCharTypesLower === false && passCharTypesUpper === false) {
         for (i = 0; i < passLengthNum; i++) {
             buildPassword += getRandNum();
         }
-        alert("Your password is: " + buildPassword);
     }
+    document.getElementById("passwordLabel").innerHTML = ("Your password is: ");
+    document.getElementById("password").innerHTML = (buildPassword);
+    console.log(buildPassword.length);
 }
